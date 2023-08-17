@@ -3,10 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Demo Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      p {
+        text-align: center;
+        border: 1px solid black; /* can be dashed or dotted */
+        padding: 15px 0;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Demo Project</h1>
+    <h1 style="color: red; background-color: aliceblue; text-align: center">
+      Demo Project
+    </h1>
     <p>This is a paragraph</p>
+
+    <!--Adding links-->
+    <!--Adding internal link-->
+    <a href="./about.html">About</a>
+
+    <!--Adding external link ====> target="blank" opens the page in a new tab-->
+    <a href="https://www.youtube.com/" target="blank">Youtube</a>
+
+    <br />
+    <!--Using image as link-->
+    <a href="https://github.com">
+      <img
+      src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg"
+      alt="image" width: "200px" height="200px" />
+    </a>
+
+    <br />
+    <!--Adding email link-->
+    <a href="mailto: test@gmail.com">test@gmail.com</a>
+    <!--Link to phone number-->
+    <a href="tel: 1234567890">1234567890</a>
   </body>
 </html>
