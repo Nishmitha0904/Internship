@@ -4,10 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      table {
+        width: 50%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black; /*Adding border*/
+        border-collapse: collapse; /*To remove the space between the borders*/
+        margin-top: 40px;
+      }
+      ul {
+        margin: 0 50px 50px;
+        list-style-type: square; /*To change the bullet type*/
+      }
+      ol {
+        margin: 0 50px 50px;
+      }
+    </style>
   </head>
   <body>
     <h1>About Page</h1>
 
     <a href="./index.html">Home</a>
+
+    <!--Creating Tables-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Robin</td>
+        <td>18</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Lilly</td>
+        <td>20</td>
+        <td>Female</td>
+      </tr>
+    </table>
+
+    <!--Adding colspan-->
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <!--Adding rowspan-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>99999 99999</td>
+      </tr>
+      <tr>
+        <td>77777 77777</td>
+      </tr>
+    </table>
+
+    <br />
+    <!--Creating lists-->
+    <!--Unordered list-->
+    <ul>
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>Grapes</li>
+    </ul>
+    <!--Ordered list-->
+    <ol type="A">
+      <li>Cars</li>
+      <li>Buses</li>
+      <li>Bikes</li>
+    </ol>
+
+    <!--HTML IFrames-->
+    <!--IFrames are used to display a web page within a web page-->
+    <iframe
+      src="./index.html"
+      width="100%"
+      style="margin: 0 0 50px; border: 1px solid black"
+      frameborder="0"
+    ></iframe>
+
+    <!--IFrames can also be used to display videos from youtube-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/HcOc7P5BMi4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <!--IFrames can also be used to display google maps-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15545.971752067891!2d74.99316149536064!3d13.067915448223234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4aae584907595%3A0xc0f2b0408e4c5a50!2sMudbidri%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1692335901191!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </body>
 </html>

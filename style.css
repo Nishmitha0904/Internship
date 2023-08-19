@@ -2,3 +2,48 @@
   margin: 0;
   padding: 0;
 }
+
+/*Class attribute*/
+.first-paragraph {
+  color: salmon;
+  border: 1px solid black;
+  margin: 10px 20px; /*top and bottom 10px, left and right 20px*/
+  border-radius: 20px; /*round the corners*/
+  padding: 10px; /*space between border and text*/
+  text-align: justify;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  margin: 0 100px;
+  padding: 20px;
+}
+
+.form-container input {
+  margin: 10px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.form-container input[type="submit"] {
+  background-color: salmon;
+  color: white;
+  letter-spacing: 3px;
+  padding: 10px 40px;
+  transition: all 0.5s;
+}
+
+.form-container input[type="submit"]:hover {
+  letter-spacing: 1px; /*When user hovers, letter spacing decrease*/
+  background-color: #ff7f50;
+}
+
+.form-container textarea {
+  margin-top: 10px;
+}
