@@ -19,7 +19,7 @@
 
     <!--HTML Forms-->
     <form action="" class="form-container">
-      <label for="">Name</label>
+      <label>Name</label>
 
       <input type="text" name="name" placeholder="Enter your name" />
       <input
@@ -35,7 +35,127 @@
         placeholder="Enter your feedback"
       ></textarea>
 
+      <!--Checkbox-->
+      <div class="checkbox-container">
+        <input type="checkbox" disabled /> vw
+        <!--disabled attribute disables the input field-->
+        <input type="checkbox" /> Ford <input type="checkbox" /> BMW
+      </div>
+      <!--Radio Buttons-->
+      <!--Radio buttons must have same name-->
+      <div>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+      </div>
+
+      <input type="password" placeholder="Enter your password" />
+      <input type="file" />
+      <input type="date" />
+      <input type="color" />
+
+      <input type="text" value="Readonly field" readonly />
+      <!--required attribute indicates that user has to enter something in that to submit it-->
+      <input type="email" required />
+
       <input type="submit" value="Save" />
     </form>
+
+    <!--JavaScript-->
+
+    <p id="demo" style="font-size: 25px; text-align: center; margin: 50px"></p>
+    <p id="demo2" style="font-size: 20px; text-align: center; margin: 50px"></p>
+    <p id="demo3" style="font-size: 20px; text-align: center; margin: 50px"></p>
+
+    <button onclick="myFunction(10,50)">Demo Button</button>
+    <!--Same function can be used more than once-->
+    <button onclick="myFunction(100,50)">Demo2 Button</button>
+
+    <!--Internal JavaScript-->
+    <script>
+      document.getElementById("demo").innerHTML = "Hello World!";
+
+      //Creating variables
+      var a = 10;
+      let b = "Hello";
+      const c = "World!";
+      var d = 50;
+      d += 100;
+
+      //Arithmetic operators
+      document.getElementById("demo2").innerHTML = a + d;
+
+      //Comparision operators
+      document.getElementById("demo3").innerHTML = 10 == a;
+      console.log(a == 10);
+
+      //Logical operators
+      console.log(a !== d && a === 10);
+      console.log(a !== 10 || a === 10);
+      console.log(!(a !== 10 || a === 10));
+
+      //Array
+      var arr = [10, "hello", 15.01];
+      console.log(arr);
+      console.log(arr[0]);
+
+      //join() method
+      console.log(arr.join(" * "));
+
+      //Object
+      var obj = { name: "john", age: 19, gender: "male" };
+      console.log(obj);
+      console.log(obj.name);
+
+      //Date
+      const date = new Date();
+      console.log(
+        date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate()
+      );
+
+      console.log(date);
+
+      //Functions
+      function myFunction(x, y) {
+        alert("Hello World!" + " " + (x + y));
+      }
+
+      //Conditional if statement
+      if (a >= 5 && a < 10) {
+        console.log("a is greater than or equal to 5");
+      } else if (a >= 10) {
+        console.log("a is greater than or equal to 10");
+      } else {
+        console.log("Everything working fine!");
+      }
+
+      //switch statement
+      switch (date.getDay()) {
+        case 0:
+          console.log("Sunday");
+          break;
+        case 1:
+          console.log("Monday");
+          break;
+        case 2:
+          console.log("Tuesday");
+          break;
+        case 3:
+          console.log("Wednesday");
+          break;
+        case 4:
+          console.log("Tursday");
+          break;
+        case 5:
+          console.log("Friday");
+          break;
+        case 6:
+          console.log("Saturday");
+          break;
+      }
+
+      // document.getElementById("demo2").innerHTML = b + " " + c;
+    </script>
+
+    <noscript>Your browser doesn't support JavaScript!</noscript>
   </body>
 </html>
