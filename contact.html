@@ -153,9 +153,73 @@
           break;
       }
 
+      //JavaScript Regular Expressions
+      //search() method
+      let text = "Hello World!";
+      let search = text.search("World");
+      console.log(search); //returns the index of the first match
+
+      //replace() method
+      console.log(text);
+      let text2 = text.replace("World", "Universe"); //replaces the first match
+      console.log(text2);
+
+      //JavaScript Errors - Throw and Try to Catch
+      try {
+        allert("Hello World"); //throws an error ---- allert is not defined
+      } catch (error) {
+        console.error(error); //prints the error in console
+      }
+
+      //ES6 Classes
+      class myClass {
+        //Constructor
+        constructor(name) {
+          this.name = name;
+          console.log(this.name);
+        }
+      }
+      let classObj = new myClass("John");
+
+      //ES6 Arrow Functions
+      const myFunction2 = (x, y) => {
+        console.log(x + y);
+      };
+
+      //Array map() method
+      var arr = [10, "hello", 15.01];
+      arr.map((item) => {
+        console.log(item);
+      });
+
+      //ES6 Destructuring
+
+      let first2 = arr[0]; //Normal way of assigning values
+      //Array Destructuring
+      const arr3 = ["one", "two", "three"];
+      const [first, sec, third] = arr3; //assigns the values of array to the variables
+      console.log(first);
+      console.log(sec, third);
+
+      //Object Destructuring
+      var obj = { name: "John", age: 19, gender: "Male" };
+      const { name, age, gender } = obj;
+      console.warn(name + "|" + age + "|" + gender); //assigns the values of object to the variables
+
+      //ES6 Spread Operator -------> ... (three dots)
+      let arr4 = [1, 2, 3, 4];
+      let arr5 = [5, 6, 7, 8];
+      let arr6 = [...arr4, ...arr5]; //combines the two arrays
+      console.log(arr6); //(8) [1, 2, 3, 4, 5, 6, 7, 8]
+
+      //ES6 Terenary Operator
+      let g = 10;
+      g === 10 ? console.log("Equal") : console.log("Not Equal");
+
       // document.getElementById("demo2").innerHTML = b + " " + c;
     </script>
 
+    <!--if browser doesn't support JavaScript-->
     <noscript>Your browser doesn't support JavaScript!</noscript>
   </body>
 </html>
